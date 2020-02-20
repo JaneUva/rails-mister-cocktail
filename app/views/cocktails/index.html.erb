@@ -1,0 +1,18 @@
+<!-- <h2>Cocktail list</h2>
+<br>
+<% @cocktails.each do |cocktail| %>
+   <strong><%= link_to cocktail.name, cocktail_path(cocktail.id) %></strong>
+<% end %>
+<br>
+<br>
+<%= link_to "➕ Add cocktail", new_cocktail_path(@cocktail) %> -->
+
+<h1>Jane's cocktails</h1>
+    <p>Awesome cocktails here</p>
+    <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
+
+
+<% @cocktails.each do |cocktail| %>
+  <h2><%= cocktail.name %></h2>
+  <%= link_to "", cocktail_path(cocktail) %>
+<% end %>
